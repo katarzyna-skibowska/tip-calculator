@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <section class="section inputs">
+        <div class="box-fields">
+          <label class="title-for-input" for="bill-value">Bill</label> <br>
+          <input class="input-text" id="bill-value" type="text" placeholder="$ 0" />
+          <h2 class="title-for-input">Select Tip %</h2>
+            <div id="percents">
+              <button class="tip-button" value="0.05" type="button" name="5%">5%</button>
+              <button class="tip-button" value="0.10" type="button" name="10%">10%</button>
+              <button class="tip-button" value="0.15" type="button" name="15%">15%</button>
+            </div>
+          <h2 class="title-for-input">Number of People</h2>
+          <input class="input-text" id="people-value" type="text" placeholder="0" />
+        <div class="sum-button-box">
+          <button class="sum-button" type="submit">Calculate</button>
+      </section>
+      <section class="section calculations">
+        <div class="box-count">
+            <div>
+          <h2 class="section-calculations-header">Tip Amount</h2>
+          <p class="note-to-header">/ person</p>
+        </div>
+          <h3 class="total" id="total-tip">$0.00</h3>      
+        </div>
+        <div class="box-count">
+            <div>
+          <h2 class="section-calculations-header">Total</h2>
+          <p class="note-to-header">/ person</p>
+        </div>
+          <h3 class="total" id="total-amount">$0.00</h3>
+        </div>
+        <button type="reset" class="reset-button">RESET</button>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
